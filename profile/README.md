@@ -232,6 +232,6 @@ Most tools (ServiceNow, Tableau, Zoho, PowerBI, etc.) have **no official MCP ser
 ![Servers Live](https://img.shields.io/badge/Registry-16%20Live-696969?style=flat-square&labelColor=2B2B2B)
 ![Open Source](https://img.shields.io/badge/License-MIT-DC143C?style=flat-square&labelColor=2B2B2B)
 
-Built by [@asklokesh](https://github.com/asklokesh) during the holidays 🎄
+Built by [@asklokesh](https://github.com/asklokesh) during the holidays
 
 </div>

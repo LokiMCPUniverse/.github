@@ -1,14 +1,14 @@
 # LokiMCPUniverse
 
-**Enterprise Model Context Protocol Servers for GenAI Integration**
+**Open-Source Enterprise Model Context Protocol Servers**
 
 <div align="center">
 
-[![Organization Stats](https://github-readme-stats.vercel.app/api?username=LokiMCPUniverse&show_icons=true&theme=dark&hide_border=true&bg_color=0D1117&title_color=DC143C&icon_color=DC143C&text_color=C9D1D9)](https://github.com/LokiMCPUniverse)
-
 ![Focus](https://img.shields.io/badge/Focus-Enterprise%20MCP%20Servers-DC143C?style=for-the-badge&labelColor=2B2B2B)
-![Status](https://img.shields.io/badge/Status-24%20Servers%20Ready-696969?style=for-the-badge&labelColor=2B2B2B)
-![GenAI](https://img.shields.io/badge/Purpose-GenAI%20Integration-DC143C?style=for-the-badge&labelColor=2B2B2B)
+![Status](https://img.shields.io/badge/Status-16%20Live%20on%20Registry-696969?style=for-the-badge&labelColor=2B2B2B)
+![License](https://img.shields.io/badge/License-MIT-DC143C?style=for-the-badge&labelColor=2B2B2B)
+
+**[Official MCP Registry](https://registry.modelcontextprotocol.io/) • [GitHub Repos](https://github.com/asklokesh) • [Install Guide](#quick-start)**
 
 </div>
 
@@ -16,191 +16,222 @@
 
 ## Mission
 
-Building the world's most comprehensive collection of enterprise-ready Model Context Protocol (MCP) servers to accelerate GenAI adoption across organizations. Each server provides seamless integration between AI agents and critical business platforms.
+Building open-source Model Context Protocol (MCP) servers for enterprise tools. 16 servers live on the official registry, enabling AI agents to seamlessly integrate with critical business platforms.
 
-## What We Build
+**No vendor lock-in. No enterprise agreements. Just open-source tools you can trust.**
 
-### Cloud Infrastructure
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=FF9900)
-![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=google-cloud&logoColor=white)
-![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoft-azure&logoColor=white)
+## Live Servers (16/19 on Official Registry)
 
-Complete cloud platform integration for infrastructure automation and management.
+### GitOps & Infrastructure
+- **ArgoCD** - GitOps continuous delivery
+- **Rancher** - Kubernetes management
+- **Azure** - Microsoft cloud platform
 
-### Enterprise CRM & Sales
-![Salesforce](https://img.shields.io/badge/Salesforce-00A1E0?style=flat-square&logo=salesforce&logoColor=white)
-![HubSpot](https://img.shields.io/badge/HubSpot-FF7A59?style=flat-square&logo=hubspot&logoColor=white)
-![Zoho](https://img.shields.io/badge/Zoho-C8202D?style=flat-square&logo=zoho&logoColor=white)
+### CI/CD & Automation
+- **Harness** - CI/CD platform
+- **Rundeck** - Runbook automation
+- **UiPath** - RPA automation
 
-CRM systems integration for sales automation and customer management.
+### ITSM & Service Management
+- **ServiceNow** - ITSM platform
 
-### DevOps & CI/CD
-![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=jenkins&logoColor=white)
-![GitLab](https://img.shields.io/badge/GitLab-FC6D26?style=flat-square&logo=gitlab&logoColor=white)
-![ArgoCD](https://img.shields.io/badge/ArgoCD-EF7B4D?style=flat-square&logo=argo&logoColor=white)
+### CRM & Sales
+- **HubSpot** - CRM and marketing automation
+- **Zoho CRM** - Customer relationship management
 
-DevOps pipeline automation and deployment orchestration.
+### Finance & Accounting
+- **QuickBooks** - Financial management
+- **FreshBooks** - Accounting and invoicing
+- **Xero** - Cloud accounting
 
-### Business Intelligence
-![PowerBI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat-square&logo=powerbi&logoColor=black)
-![Tableau](https://img.shields.io/badge/Tableau-E97627?style=flat-square&logo=tableau&logoColor=white)
+### Analytics & Business Intelligence
+- **PowerBI** - Business analytics
+- **Tableau** - Data visualization
 
-Data visualization and analytics platform integration.
+### Marketing & Communication
+- **Mailchimp** - Email marketing
+- **Hootsuite** - Social media management
+- **Chanty** - Team communication
 
-### Additional Platforms
-**24 Production-Ready Servers** covering accounting, marketing, automation, and enterprise software.
+## Why Open Source MCP Servers?
 
-## Repository Collection
+### No Vendor Lock-In
+Some tools have official MCP implementations (Azure, ArgoCD, HubSpot). Many don't. These open-source alternatives give you:
 
-<div align="center">
-
-### [View Complete Collection](https://github.com/LokiMCPUniverse/mcp-servers)
-
-[![MCP Servers Collection](https://github-readme-stats.vercel.app/api/pin/?username=LokiMCPUniverse&repo=mcp-servers&theme=dark&hide_border=true&bg_color=161B22&title_color=DC143C&icon_color=696969)](https://github.com/LokiMCPUniverse/mcp-servers)
-
-</div>
-
-## Key Features
+- **MIT Licensed** - Audit the code, know what it does
+- **Free Forever** - No licensing fees, no enterprise requirements
+- **Fully Customizable** - Fork it, modify it, deploy your way
+- **Community Driven** - Features based on real user needs
 
 ### Production Ready
-- **Enterprise Security**: OAuth 2.0, JWT, API key authentication
-- **Rate Limiting**: Compliant with platform limits
-- **Error Handling**: Comprehensive retry logic and error recovery
-- **Monitoring**: Built-in logging and metrics
-
-### Developer Optimized
-- **Consistent Architecture**: Standardized across all servers
-- **Easy Integration**: Simple configuration via environment variables
-- **Comprehensive Docs**: Detailed README and examples for each server
-- **TypeScript Support**: Full type definitions where applicable
-
-### GenAI Focused
-- **Structured Responses**: Optimized for AI agent consumption
-- **Batch Operations**: Efficient bulk data processing
-- **Context Awareness**: Smart data formatting for AI workflows
-- **Tool Definitions**: Clear MCP protocol implementation
+- Async/await throughout for high performance
+- Retry logic with exponential backoff
+- Rate limit handling
+- Structured JSON logging
+- Comprehensive error handling
+- Environment-based configuration
 
 ## Quick Start
 
 ### Installation
+
 ```bash
-# Install any server via pip
-pip install salesforce-mcp-server
-pip install aws-mcp-server
-pip install hubspot-mcp-server
+# Install via uvx (recommended)
+uvx servicenow-mcp-server
+uvx argocd-mcp-server
+uvx azure-mcp-server
+
+# Or via pip
+pip install servicenow-mcp-server
 ```
 
 ### Claude Desktop Configuration
+
 ```json
 {
   "mcpServers": {
-    "salesforce": {
-      "command": "python",
-      "args": ["-m", "salesforce_mcp.server"],
+    "servicenow": {
+      "command": "uvx",
+      "args": ["servicenow-mcp-server"],
       "env": {
-        "SALESFORCE_INSTANCE_URL": "your-instance-url",
-        "SALESFORCE_USERNAME": "your-username",
-        "SALESFORCE_PASSWORD": "your-password"
+        "SERVICENOW_INSTANCE": "your-instance.service-now.com",
+        "SERVICENOW_USERNAME": "your-username",
+        "SERVICENOW_PASSWORD": "your-password"
       }
     }
   }
 }
 ```
 
-## Architecture Standards
+### Browse All Servers
 
-Every MCP server follows our battle-tested architecture:
+Visit the official MCP Registry: **https://registry.modelcontextprotocol.io/**
+
+Search for: **asklokesh**
+
+## Server Status
+
+**Live on Registry:** 16 servers ✅
+- All production-ready
+- All open source (MIT license)
+- All installable via `uvx` or `pip`
+
+**Pending:** 1 server ⏳
+- HubSpot (awaiting PyPI README indexing)
+
+**Blocked:** 2 servers ⚠️
+- GCP, GitLab (PyPI ownership conflicts)
+
+## Architecture
+
+Every server follows a consistent architecture:
 
 ```
 server-name-mcp-server/
-├── src/server_name_mcp/
+├── src/
 │   ├── server.py          # MCP protocol implementation
 │   ├── client.py          # Platform API client
-│   ├── auth.py            # Authentication handlers
-│   ├── config.py          # Configuration management
-│   └── exceptions.py      # Custom error types
-├── tests/                 # Comprehensive test suite
-├── examples/              # Integration examples
-└── README.md             # Detailed documentation
+│   ├── auth.py            # Authentication
+│   └── config.py          # Configuration
+├── tests/                 # Test suite
+├── examples/              # Usage examples
+└── README.md             # Documentation
 ```
 
-## Enterprise Support
+**Stack:**
+- Python 3.8+
+- MCP SDK
+- Hatchling build system
+- PyPI + uvx distribution
 
-### Multi-Tenant Ready
-- Support for multiple accounts/organizations
-- Role-based access control (RBAC)
-- Audit logging and compliance
+## Use Cases
 
-### Scalability
-- Async operations for high throughput
-- Connection pooling and resource optimization
-- Horizontal scaling support
+### For SRE Teams
+```
+"Check if we have any critical ServiceNow incidents"
+"Show me failed ArgoCD deployments in the last hour"
+"Deploy staging branch to ArgoCD"
+```
 
-### Security
-- Zero-trust architecture
-- Encryption at rest and in transit
-- Regular security audits
+### For Platform Engineers
+```
+"List all Azure VMs in production"
+"Create a P1 incident in ServiceNow for database outage"
+"Run Rundeck job for production deployment"
+```
+
+### For Finance Teams
+```
+"What's our revenue this quarter?" (QuickBooks)
+"Show me unpaid invoices" (FreshBooks)
+"List all active subscriptions" (Xero)
+```
 
 ## Contributing
 
-We welcome contributions from the community:
+PRs welcome! These are community-driven projects.
 
-1. **Report Issues**: Found a bug? Open an issue
-2. **Request Features**: Need a new integration? Let us know
-3. **Submit PRs**: Contribute code improvements
-4. **Documentation**: Help improve our docs
+1. **Report Issues** - Found a bug? Open an issue
+2. **Request Features** - Need something? Let us know
+3. **Submit PRs** - Code contributions appreciated
+4. **Improve Docs** - Help make our docs better
 
-### Development Setup
 ```bash
-git clone https://github.com/LokiMCPUniverse/[server-name]
+# Development setup
+git clone https://github.com/asklokesh/[server-name]
 cd [server-name]
 pip install -e ".[dev]"
 pytest
 ```
 
-## Community
+## Community & Support
 
-- **Discussions**: Join our GitHub Discussions for community support
-- **Issues**: Report bugs and request features via GitHub Issues
-- **Security**: Report vulnerabilities to security@lokimcpuniverse.com
+- **GitHub Issues**: Report bugs and request features
+- **Pull Requests**: Contribute improvements
+- **MCP Registry**: Find all published servers
+- **Documentation**: Each repo has detailed README
 
-## Statistics
+## Official vs Community Implementations
 
-<div align="center">
+Some tools have official MCP servers from vendors:
+- **Azure** - Microsoft (GA)
+- **ArgoCD** - argoproj-labs (Official)
+- **HubSpot** - HubSpot (Beta)
+- **QuickBooks** - Intuit (Preview, sandbox only)
+- **UiPath** - Native platform support
+- **Rancher** - SUSE (Tech Preview)
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=LokiMCPUniverse&show_icons=true&theme=dark&hide_border=true&bg_color=0D1117&title_color=DC143C&icon_color=DC143C&text_color=C9D1D9&count_private=true)
+**Why use community versions?**
+- Open source vs proprietary
+- MIT license vs vendor agreements
+- Free vs potential licensing costs
+- Customizable vs vendor-controlled
+- Community features vs vendor roadmap
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=LokiMCPUniverse&layout=compact&theme=dark&hide_border=true&bg_color=0D1117&title_color=DC143C&text_color=C9D1D9)
+Most tools (ServiceNow, Tableau, Zoho, PowerBI, etc.) have **no official MCP servers** - these community implementations fill that gap.
 
-</div>
+## Current Status (December 2025)
 
-## Roadmap
+**Accomplishment:** 16 enterprise MCP servers published to official registry
 
-### 2024 Q4
-- Complete all 24 initial server implementations
-- Enhanced documentation and examples
-- Performance optimization
+**Built during:** Christmas/New Year holidays 2024-2025
 
-### 2025 Q1
-- Additional platform integrations
-- Advanced AI workflow examples
-- Enterprise deployment guides
+**Impact:** Enterprise teams can now integrate AI with critical business tools using standardized, open-source MCP servers
 
-### Future
-- Custom AI agent templates
-- Visual workflow builders
-- Enterprise consulting services
+**Next:** Continue adding servers as community needs them
 
 ---
 
 <div align="center">
 
-**Built for the future of enterprise AI integration**
+**Open Source • Production Ready • No Vendor Lock-In**
 
-[Explore Our Servers](https://github.com/LokiMCPUniverse/mcp-servers) | [Get Started](https://github.com/LokiMCPUniverse/mcp-servers#quick-start) | [Join Community](https://github.com/orgs/LokiMCPUniverse/discussions)
+[Browse Servers](https://registry.modelcontextprotocol.io/) • [Install Guide](#quick-start) • [GitHub](https://github.com/asklokesh)
 
-![Organization Founded](https://img.shields.io/badge/Founded-2024-DC143C?style=flat-square&labelColor=2B2B2B)
-![Servers Available](https://img.shields.io/badge/Servers-24-696969?style=flat-square&labelColor=2B2B2B)
-![License](https://img.shields.io/badge/License-MIT-DC143C?style=flat-square&labelColor=2B2B2B)
+![Founded](https://img.shields.io/badge/Founded-2024-DC143C?style=flat-square&labelColor=2B2B2B)
+![Servers Live](https://img.shields.io/badge/Registry-16%20Live-696969?style=flat-square&labelColor=2B2B2B)
+![Open Source](https://img.shields.io/badge/License-MIT-DC143C?style=flat-square&labelColor=2B2B2B)
+
+Built by [@asklokesh](https://github.com/asklokesh) during the holidays 🎄
 
 </div>
